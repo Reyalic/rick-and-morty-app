@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Domine', serif;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #101010;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23adffb4' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+img{
+  width: 100%;
+  
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header {
+  font-size: 2rem;
+  position: relative;
+  width: 100%;
+  background-image: url('https://www.gamespot.com/a/uploads/screen_kubrick/1578/15789737/3806525-rickmorty.jpg');
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-title {
+  background-color: #f4fc6995;
+  border-radius: 50%;
+  padding: 80px 10px;
+}
+.main-title h1 {
+  color: rgb(5, 140, 0);
+  width: 50%;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+form {
+  margin: 30px;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+input {
+  background-color: #444444;
+  width: 400px;
+  padding: 10px;
+  border: none;
+}
+
+input:hover {
+  border:rgba(0, 111, 24, 0.716);
+}
+
+button {
+  background-color: rgb(0, 227, 72);
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  margin-left: 20px;
+}
+
+.main-card {
+  border: 1px solid #000;
+  box-shadow: 0 0 3px 3px rgb(174, 0, 197);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 25px;
+}
+.card-data {
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 1.5em;
+  justify-content: center;
+}
+.card-container {
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: rgb(0, 227, 72);
+  opacity: 0.8;
+  overflow: hidden;
+  text-align: center;
+}
+.card-container:hover {
+  box-shadow: 0 0 8px 8px rgba(0, 111, 24, 0.716);
+}
+.card-list{
+  padding: 1em;
+}
+@media(min-width: 400px) {
+  .header {
+    height: 30vh
+  }
+  input {
+    width: 200px;
+  }
+  .main-title h1 {
+    font-size: 40px;
+  }
+}
+@media(min-width: 600px) {
+  .header {
+    height: 30vh
+  }
+  input {
+    width: 300px;
+  }
+}
+@media(min-width: 800px) {
+  .header {
+    height: 40vh
+  }
+  input {
+    width: 400px;
+  }
+  .main-title h1 {
+    font-size: 50px;
+  }
+}
+@media(min-width: 1000px) {
+  .header {
+    height: 50vh
+  }
+}
